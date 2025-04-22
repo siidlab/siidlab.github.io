@@ -477,3 +477,64 @@
     grid-area: span 1 / span 1 / span 1 / span 1;
   }
 }
+
+/* Mobile-specific responsive fixes */
+@media screen and (max-width: 767px) {
+  /* Main grid layout */
+  .w-layout-layout.quick-stack {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  
+  /* Image scaling */
+  .image-2, .image-3 {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Text containers */
+  .paragraph-about, .paragraph-publications {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Videos */
+  .video, .video-3, .video-4, .video-5, .video-6, .video-7, 
+  .video-8, .video-9, .video-10, .video-11 {
+    width: 100%;
+  }
+  
+  /* Video containers */
+  .div-block-3, .div-block-4, .div-block-5, 
+  .div-block-6, .div-block-7, .div-block-8 {
+    width: 100%;
+  }
+  
+  /* Navigation menu adjustments */
+  .gallery-scroll {
+    padding: 40px 15px;
+  }
+  
+  /* Text size adjustments */
+  .paragraph-about, .paragraph-about-2 {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+/* Very small screens */
+@media screen and (max-width: 479px) {
+  /* Further text size reduction */
+  .paragraph-about, .paragraph-about-2, .paragraph-publications {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  /* Headings */
+  .heading, .heading-2 {
+    font-size: 22px;
+  }
+}
