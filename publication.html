@@ -17,7 +17,7 @@
   <link href="images/webclip.png" rel="apple-touch-icon">
   
 
-  <script>
+    <script>
   // Function to detect mobile device
   function isMobileDevice() {
     return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
@@ -32,13 +32,14 @@
       
       // If viewport meta tag exists, modify it
       if (viewport) {
-        viewport.setAttribute('content', 'width=1280, initial-scale=0.5');
+        // Using a lower initial-scale value (0.3) to fit more content in the viewport
+        viewport.setAttribute('content', 'width=1280, initial-scale=0.3');
       } 
       // If viewport tag doesn't exist, create one
       else {
         var newViewport = document.createElement('meta');
         newViewport.setAttribute('name', 'viewport');
-        newViewport.setAttribute('content', 'width=1280, initial-scale=0.5');
+        newViewport.setAttribute('content', 'width=1280, initial-scale=0.3');
         document.head.appendChild(newViewport);
       }
     }
@@ -47,6 +48,7 @@
   // When the page loads, force desktop view
   window.addEventListener('DOMContentLoaded', forceDesktopView);
   </script>
+  
 </head>
 <body class="body">
   <div id="w-node-_5f470aba-a59e-89b1-2f49-7caafac3a3f3-49a29760" class="w-layout-layout quick-stack wf-layout-layout">
