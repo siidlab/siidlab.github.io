@@ -478,63 +478,62 @@
   }
 }
 
-/* Mobile-specific responsive fixes */
+
+
+/* Specific fixes for the SIID Lab sidebar navigation on mobile */
 @media screen and (max-width: 767px) {
-  /* Main grid layout */
-  .w-layout-layout.quick-stack {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  
-  /* Image scaling */
-  .image-2, .image-3 {
-    width: 100%;
-    height: auto;
-  }
-  
-  /* Text containers */
-  .paragraph-about, .paragraph-publications {
-    width: 100%;
-    max-width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-    box-sizing: border-box;
-  }
-  
-  /* Videos */
-  .video, .video-3, .video-4, .video-5, .video-6, .video-7, 
-  .video-8, .video-9, .video-10, .video-11 {
-    width: 100%;
-  }
-  
-  /* Video containers */
-  .div-block-3, .div-block-4, .div-block-5, 
-  .div-block-6, .div-block-7, .div-block-8 {
-    width: 100%;
-  }
-  
-  /* Navigation menu adjustments */
+  /* Make the sidebar visible and properly styled on mobile */
   .gallery-scroll {
-    padding: 40px 15px;
+    position: relative;
+    padding: 20px 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
-  /* Text size adjustments */
-  .paragraph-about, .paragraph-about-2 {
-    font-size: 18px;
-    line-height: 26px;
+  /* Fix the sticky positioning on mobile */
+  .gallery-sticky {
+    position: relative !important;
+    top: 0 !important;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  /* Make the menu links display horizontally on mobile */
+  .gallery-link {
+    margin: 10px 15px;
+    display: inline-block;
+  }
+  
+  /* Adjust the main content area to take full width */
+  .cell {
+    width: 100%;
+  }
+  
+  /* Adjust the layout to be single column on mobile */
+  #w-node-_5f470aba-a59e-89b1-2f49-7caafac3a3f3-fdf9aeb7,
+  #w-node-_5f470aba-a59e-89b1-2f49-7caafac3a3f3-3d153a55,
+  #w-node-_5f470aba-a59e-89b1-2f49-7caafac3a3f3-49a29760 {
+    grid-template-columns: 1fr !important;
+  }
+  
+  /* Make the logo smaller on mobile */
+  .gallery-scroll img {
+    width: 120px;
+    margin-bottom: 15px;
   }
 }
 
-/* Very small screens */
+/* Fixes for very small screens */
 @media screen and (max-width: 479px) {
-  /* Further text size reduction */
-  .paragraph-about, .paragraph-about-2, .paragraph-publications {
-    font-size: 16px;
-    line-height: 24px;
-  }
-  
-  /* Headings */
-  .heading, .heading-2 {
-    font-size: 22px;
+  /* Further adjustments for the smallest screens */
+  .gallery-link {
+    margin: 8px 10px;
+    font-size: 18px;
   }
 }
