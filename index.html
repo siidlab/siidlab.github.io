@@ -33,13 +33,13 @@
       // If viewport meta tag exists, modify it
       if (viewport) {
         // Using a lower initial-scale value (0.3) to fit more content in the viewport
-        viewport.setAttribute('content', 'width=1080, initial-scale=0.3');
+        viewport.setAttribute('content', 'width=960, initial-scale=0.3');
       } 
       // If viewport tag doesn't exist, create one
       else {
         var newViewport = document.createElement('meta');
         newViewport.setAttribute('name', 'viewport');
-        newViewport.setAttribute('content', 'width=1080, initial-scale=0.3');
+        newViewport.setAttribute('content', 'width=960, initial-scale=0.3');
         document.head.appendChild(newViewport);
       }
     }
