@@ -33,13 +33,13 @@
       // If viewport meta tag exists, modify it
       if (viewport) {
         // Using a lower initial-scale value (0.3) to fit more content in the viewport
-        viewport.setAttribute('content', 'width=1280, initial-scale=0.3');
+        viewport.setAttribute('content', 'width=1080, initial-scale=0.3');
       } 
       // If viewport tag doesn't exist, create one
       else {
         var newViewport = document.createElement('meta');
         newViewport.setAttribute('name', 'viewport');
-        newViewport.setAttribute('content', 'width=1280, initial-scale=0.3');
+        newViewport.setAttribute('content', 'width=1080, initial-scale=0.3');
         document.head.appendChild(newViewport);
       }
     }
@@ -48,7 +48,7 @@
   // When the page loads, force desktop view
   window.addEventListener('DOMContentLoaded', forceDesktopView);
   </script>
-  
+
 </head>
 <body class="body">
   <div id="w-node-_5f470aba-a59e-89b1-2f49-7caafac3a3f3-fdf9aeb7" class="w-layout-layout quick-stack wf-layout-layout">
