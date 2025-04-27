@@ -63,7 +63,7 @@
 .gallery-link {
   color: #fff;
   margin-bottom: 35px;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 32px;
   text-decoration: none;
 }
@@ -73,6 +73,7 @@
 }
 
 .gallery-link.w--current {
+  font-size: 20px;
   font-weight: 600;
 }
 
@@ -340,7 +341,7 @@
 }
 
 .text-span-2 {
-  color: gray;
+  color: #fff;
   font-size: 15px;
 }
 
@@ -380,14 +381,14 @@
 
 .paragraph-publications {
   color: #fff;
-  text-align: justify;
+  text-align: left;
   text-indent: 1px;
   column-count: auto;
   width: 870px;
   padding-left: 40px;
   padding-right: 40px;
   font-family: Montserrat, sans-serif;
-  font-size: 20px;
+  font-size: 15px;
   line-height: 30px;
   text-decoration: none;
 }
@@ -466,74 +467,23 @@
   grid-area: span 1 / span 3 / span 1 / span 3;
 }
 
+#w-node-_5f470aba-a59e-89b1-2f49-7caafac3a3f3-6f07aaba {
+  grid-template-rows: auto;
+  grid-template-columns: .25fr 1fr;
+}
+
+#w-node-_8c4e39c4-db37-1d4e-c065-4fef61cbd1b0-6f07aaba {
+  grid-area: span 1 / span 3 / span 1 / span 3;
+}
+
 @media screen and (max-width: 991px) {
-  #w-node-_8c4e39c4-db37-1d4e-c065-4fef61cbd1b0-fdf9aeb7, #w-node-_8c4e39c4-db37-1d4e-c065-4fef61cbd1b0-3d153a55, #w-node-_8c4e39c4-db37-1d4e-c065-4fef61cbd1b0-49a29760 {
+  #w-node-_8c4e39c4-db37-1d4e-c065-4fef61cbd1b0-fdf9aeb7, #w-node-_8c4e39c4-db37-1d4e-c065-4fef61cbd1b0-3d153a55, #w-node-_8c4e39c4-db37-1d4e-c065-4fef61cbd1b0-49a29760, #w-node-_8c4e39c4-db37-1d4e-c065-4fef61cbd1b0-6f07aaba {
     grid-area: span 1 / span 2 / span 1 / span 2;
   }
 }
 
 @media screen and (max-width: 479px) {
-  #w-node-_8c4e39c4-db37-1d4e-c065-4fef61cbd1b0-fdf9aeb7, #w-node-_8c4e39c4-db37-1d4e-c065-4fef61cbd1b0-3d153a55, #w-node-_8c4e39c4-db37-1d4e-c065-4fef61cbd1b0-49a29760 {
+  #w-node-_8c4e39c4-db37-1d4e-c065-4fef61cbd1b0-fdf9aeb7, #w-node-_8c4e39c4-db37-1d4e-c065-4fef61cbd1b0-3d153a55, #w-node-_8c4e39c4-db37-1d4e-c065-4fef61cbd1b0-49a29760, #w-node-_8c4e39c4-db37-1d4e-c065-4fef61cbd1b0-6f07aaba {
     grid-area: span 1 / span 1 / span 1 / span 1;
-  }
-}
-
-
-
-/* Specific fixes for the SIID Lab sidebar navigation on mobile */
-@media screen and (max-width: 767px) {
-  /* Make the sidebar visible and properly styled on mobile */
-  .gallery-scroll {
-    position: relative;
-    padding: 20px 15px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  /* Fix the sticky positioning on mobile */
-  .gallery-sticky {
-    position: relative !important;
-    top: 0 !important;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  
-  /* Make the menu links display horizontally on mobile */
-  .gallery-link {
-    margin: 10px 15px;
-    display: inline-block;
-  }
-  
-  /* Adjust the main content area to take full width */
-  .cell {
-    width: 100%;
-  }
-  
-  /* Adjust the layout to be single column on mobile */
-  #w-node-_5f470aba-a59e-89b1-2f49-7caafac3a3f3-fdf9aeb7,
-  #w-node-_5f470aba-a59e-89b1-2f49-7caafac3a3f3-3d153a55,
-  #w-node-_5f470aba-a59e-89b1-2f49-7caafac3a3f3-49a29760 {
-    grid-template-columns: 1fr !important;
-  }
-  
-  /* Make the logo smaller on mobile */
-  .gallery-scroll img {
-    width: 120px;
-    margin-bottom: 15px;
-  }
-}
-
-/* Fixes for very small screens */
-@media screen and (max-width: 479px) {
-  /* Further adjustments for the smallest screens */
-  .gallery-link {
-    margin: 8px 10px;
-    font-size: 18px;
   }
 }
