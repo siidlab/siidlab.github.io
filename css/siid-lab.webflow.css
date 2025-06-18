@@ -393,6 +393,39 @@
   text-decoration: none;
 }
 
+.paragraph-members {
+  color: #fff;
+  text-align: center;
+  text-indent: 1px;
+  column-count: auto;
+  font-family: Montserrat, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  text-decoration: none;
+}
+
+.member-row {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.member-block {
+  text-align: center;
+  max-width: 250px;
+}
+
+.small-image {
+  max-width: 250px;
+  width: 100%;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 @media screen and (max-width: 991px) {
   .container {
     max-width: 728px;
